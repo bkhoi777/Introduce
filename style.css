@@ -1,0 +1,44 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #f5f5f5;
+  color: #333;
+}
+
+header {
+  background: #0077cc;
+  color: white;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.about {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 20px;
+  background: white;
+}
+
+.about img {
+  max-width: 200px;
+  border-radius: 100px;
+  margin-right: 20px;
+}
+
+.about .info {
+  max-width: 600px;
+}
+
+.contact {
+  background: #eef;
+  padding: 20px;
+  text-align: center;
+}
+
+footer {
+  background: #ccc;
+  text-align: center;
+  padding: 10px;
+  font-size: 14px;
+}
