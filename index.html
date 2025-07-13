@@ -3,33 +3,82 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>About Me</title>
+  <title>About Me - KHOI</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
   <header>
     <h1>Hello, I'm KHOI</h1>
     <p>Welcome to my personal website!</p>
+    <nav>
+      <div class="menu-toggle" id="mobile-menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
   </header>
 
-  <section class="about">
-    <img src="https://www.allaboutbirds.org/guide/assets/photo/308074031-480px.jpg" alt="Profile Picture">
-    <div class="info">
-      <h2>About Me</h2>
-      <p>I am a web developer with a passion for creating beautiful and responsive websites. I enjoy solving problems, learning new technologies, and working on exciting projects.</p>
-      <p>Skills: HTML, CSS, JavaScript, React, Node.js</p>
-      <p>Hobbies: Coding, reading books, traveling, playing guitar</p>
-    </div>
-  </section>
+  <main>
+    <section id="about" class="about">
+      <img src="https://www.allaboutbirds.org/guide/assets/photo/308074031-480px.jpg" alt="Profile Picture" class="profile-img">
+      <div class="info">
+        <h2>About Me</h2>
+        <p>I am a web developer with a passion for creating beautiful and responsive websites. I enjoy solving problems, learning new technologies, and working on exciting projects.</p>
+        <p>Skills: HTML, CSS, JavaScript, React, Node.js</p>
+        <p>Hobbies: Coding, reading books, traveling, playing guitar</p>
+        
+        <div class="skill-highlight">
+            <p>Hover over a skill to see my proficiency.</p>
+        </div>
+        
+      </div>
+    </section>
 
-  <section class="contact">
-    <h2>Contact Me</h2>
-    <p>Email: KHOI@example.com</p>
-    <p>Phone: +123 456 7890</p>
-  </section>
+    <section id="projects" class="projects">
+      <h2>My Projects</h2>
+      <div class="project-grid">
+          <div class="project-card">
+              <h3>Project 1: Portfolio Site</h3>
+              <p>A responsive portfolio built with HTML and CSS.</p>
+              <a href="#" class="btn">View Project</a>
+          </div>
+          <div class="project-card">
+              <h3>Project 2: E-commerce Mockup</h3>
+              <p>An e-commerce front-end using React and dynamic components.</p>
+              <a href="#" class="btn">View Project</a>
+          </div>
+          <div class="project-card">
+            <h3>Project 3: Blog System</h3>
+            <p>A simple blog platform using Node.js backend.</p>
+            <a href="#" class="btn">View Project</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="contact">
+      <h2>Contact Me</h2>
+      <p>Email: KHOI@example.com</p>
+      <p>Phone: +123 456 7890</p>
+    </section>
+  </main>
 
   <footer>
     <p>&copy; 2025 KHOI. All rights reserved.</p>
   </footer>
+
+  <script>
+    document.getElementById('mobile-menu').addEventListener('click', function() {
+      const navLinks = document.getElementById('nav-links');
+      navLinks.classList.toggle('active');
+      this.classList.toggle('open');
+    });
+  </script>
 </body>
 </html>
